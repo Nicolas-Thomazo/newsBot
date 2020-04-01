@@ -1,10 +1,10 @@
 # NewsBot
 
-![bot](https://botdirectory.net/wp-content/uploads/2016/07/NewsBot-messenger_code.png)
+Keep up to date with the latest news
 
 - [🐣 Introduction](#-introduction)
-- [🏃‍♀️ Steps to do](#-steps-to-do)
-- [📋 Explications](#-explication)
+- [🏃‍♀️ Steps to do](#steps-to-do)
+- [📋 Explications](#-explications)
 - [👨‍🎓 Developers ](#-developers)
 
 
@@ -12,23 +12,23 @@
 
 NewsBot is a chatbot in messenger that give you the latest news about a specific domain.
 
-Here what I can do
-➡Greeting
-➡Bye   
-➡Helping
-➡Asking for whatever news
+Here what I can do  
+- Greeting  
+- Bye   
+- Helping   
+- Asking for whatever news
 
 The news part is related to the api :newsapi (https://newsapi.org/)
 
-When you aski questions to the chatbot about the news you 
-- specified country (USA, France ...)
-- Fields (economy, covid-19 ...)
+When you ask a question to the chatbot about the news you can specify
+- countries (USA, France ...)
+- fields (economy, covid-19 ...)
 - politics (president, conflict, election, brexit ...)
-- environment (ocean, climat change, tornado ...)
+- environments (ocean, climat change, tornado ...)
 
 ## 🏃‍♀️ Steps to do
 
-We deployed the chatbot on messenger. But all the apps in messanger must be reviewed before interacting with users on Messenger. So we couldn't put it in global, it's only local.
+We deployed the chatbot on messenger. But all the apps in messanger must be reviewed before interacting with users on Messenger. So we couldn't put it in global, it's only local for the moment.
 
 In order to make it run on your facebook you must follow these steps
 
@@ -48,10 +48,13 @@ In order to make it run on your facebook you must follow these steps
 If you did everything right, you should get a message in your console saying that the webhook is registered :)
 You should be able to receive messages sent to your bot on facebook and it should be able to answer.
 
+Once all these steps are done you need to run ngrok and server.js in order to have the ot running.
+
 ## 📋 Explications
 
+How does our chatbot works ?
 
-
+The architecture of newsbot is a task-oriented dialog system. It was created in order to respond to a particular task, in our case, give some news. We obtain the intention of the user thanks to our file pattern. Then we send a request on the newsapi in order to get the 3 headline articles.
 
 ## Presentation video
 
