@@ -1,6 +1,6 @@
 # NewsBot
 
-(https://botdirectory.net/wp-content/uploads/2016/07/NewsBot-messenger_code.png)
+![bot](https://botdirectory.net/wp-content/uploads/2016/07/NewsBot-messenger_code.png)
 
 - [🐣 Introduction](#-introduction)
 - [🏃‍♀️ Steps to do](#-steps-to-do)
@@ -13,10 +13,10 @@
 NewsBot is a chatbot in messenger that give you the latest news about a specific domain.
 
 Here what I can do
-    ➡Greeting
-    ➡Bye
-    ➡Helping
-    ➡Asking for whatever news
+➡Greeting
+➡Bye
+➡Helping
+➡Asking for whatever news
 
 The news part is related to the api :newsapi (https://newsapi.org/)
 
