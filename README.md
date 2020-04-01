@@ -56,6 +56,10 @@ To modify the chatbot, you have to find a new api and implement it in the code b
 If you want the chatbot to be able to answer to a wider range of messages, you can add different patterns and intents in the pattern.js file. This will allow the chatbot to send back news articles for more things.
 
 
+## Presentation video
+
+https://www.youtube.com/watch?v=vsCjoIk5w_g&fbclid=IwAR1trryjQdXLfcQBxr2XgaI_QlUS7pVhpwD-XR3aUjnre1AeMetQ1wATBbc
+
 ## 👨‍🎓 Developers 
 
 Esilv - IBO - Chatbot project
