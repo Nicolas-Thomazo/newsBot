@@ -10,7 +10,7 @@ Keep up to date with the latest news
 
 ## 🐣 Introduction
 
-NewsBot is a chatbot in messenger that give you the latest news about a specific domain.
+NewsBot is a chatbot in messenger that give you the latest news.
 
 Here what I can do  
 - Greeting  
