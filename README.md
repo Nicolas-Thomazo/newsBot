@@ -3,7 +3,7 @@
 Keep up to date with the latest news
 
 - [🐣 Introduction](#-introduction)
-- [🏃‍♀️ Steps to do](#steps-to-do)
+- [🏃‍♀️ Steps to do](#-steps-to-do)
 - [📋 Explications](#-explications)
 - [👨‍🎓 Developers ](#-developers)
 
