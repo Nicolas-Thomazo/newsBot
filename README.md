@@ -50,10 +50,7 @@ You should be able to receive messages sent to your bot on facebook and it shoul
 
 ## 📋 Explications
 
-The architecture of newsBot fall into the task-oriented dialog system, it is designed for a particular task (here it's about getting the news). It's set up to get information from the user to help complete the task. Like the Control structure of Frame Based Dialogue System, it has a set of slots for the job frame that specifies what the system needs to know, then define the values that each slot can take by asking questions of each.
 
-To modify the chatbot, you have to find a new api and implement it in the code by replacing the news API.
-If you want the chatbot to be able to answer to a wider range of messages, you can add different patterns and intents in the pattern.js file. This will allow the chatbot to send back news articles for more things.
 
 
 ## Presentation video
