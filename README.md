@@ -32,11 +32,12 @@ We deployed the chatbot on messenger. But all the apps in messanger must be revi
 
 In order to make it run on your facebook you must follow these steps
 
-- Create a facebook page for ypur project and link it up with facebook for developers at https://developers.facebook.com/
+- Create a facebook page for your project and link it up with facebook for developers at https://developers.facebook.com/
 - On your facebook for developers page, go to your project and generate an Access Token
 - Take the access token that you generated and replace the pageAccessToken with yours in the development.json file
 - For the next part you can either generate a 64byte string yourself or you can use the existing string
 - If you choose de generate it yourself, you have to replace the VerifyToken field in the development.json file
+- At this point, you can start your server: node server.js
 - Next you should install ngrok with the following command: npm i -g ngrok (you can find the docs here https://ngrok.com/)
 - If you're using port 3000 for this project, you can generate a private https with the following command: nrgok http 3000
 - Next you're going to register your webhook on facebook
@@ -45,10 +46,14 @@ In order to make it run on your facebook you must follow these steps
 - Copy and paste your previously generated VerifyToken in the Verify Token field
 
 If you did everything right, you should get a message in your console saying that the webhook is registered :)
+You should be able to receive messages sent to your bot on facebook and it should be able to answer.
 
 ## 📋 Explications
 
 The architecture of newsBot fall into the task-oriented dialog system, it is designed for a particular task (here it's about getting the news). It's set up to get information from the user to help complete the task. Like the Control structure of Frame Based Dialogue System, it has a set of slots for the job frame that specifies what the system needs to know, then define the values that each slot can take by asking questions of each.
+
+To modify the chatbot, you have to find a new api and implement it in the code by replacing the news API.
+If you want the chatbot to be able to answer to a wider range of messages, you can add different patterns and intents in the pattern.js file. This will allow the chatbot to send back news articles for more things.
 
 
 ## 👨‍🎓 Developers 
