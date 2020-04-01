@@ -14,7 +14,7 @@ NewsBot is a chatbot in messenger that give you the latest news about a specific
 
 Here what I can do
 ➡Greeting
-➡Bye
+➡Bye   
 ➡Helping
 ➡Asking for whatever news
 

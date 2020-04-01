@@ -13,7 +13,8 @@ const  api = require('./api');
 const server = express();
 const PORT = process.env.PORT || 3000;
 
-server.get('/',(req,res) => f.registerHook(req,res));
+server.get('/',(req,res) => f.registerHook(req,res)
+);
 server.post('/', bodyParser.json({
     verify: f.verifySignature.call(f)
 }));
@@ -69,7 +70,7 @@ async function bot_answer(f, data){
                 }
                 if(cb.case == 3)
                 {
-                    var help = "Here what I can do\n➡Greeting\n➡Bye\n➡Helping\n➡Asking for whatever news";
+                    var help = "Here what I can do\n➡Greeting\n➡Bye\n➡Helping\n➡Giving news";
                     await f.txt(data.sender,help)
                 }
             }

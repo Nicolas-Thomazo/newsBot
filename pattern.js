@@ -7,15 +7,15 @@ const  patternDict = [{
   intent: "see you another time 👋",
   case : 1
 },{
-  pattern: "\\b([Ww]hat can you do|What are your)\\b",
-  intent: "help",
-  case : 3
+  pattern: "\\b([Ww]hat can you do|What are you)\\b",
+  intent: "I am a chatbot that gives news, if you want more info write help 😉",
+  case : 1
 },{
   pattern: "[Hh]elp",
   intent: "help",
   case : 3
 },{
-  pattern: "([I'm ]?Fine|[Gg]ood|[I'm ]?[Oo]kay)",
+  pattern: "([I'm ]?Fine|I'm [Gg]ood|I'm [Oo]kay)",
   intent: "Great ! how can I help you ? 🤔",
   case : 1
 },{
@@ -64,7 +64,7 @@ const  patternDict = [{
   case : 2
 },{
   pattern: "\\[Uu]nited\\s?[Kk]ingdom\\b|\\b[Uu][Kk]\\b",
-  intent: "UK United-Kingdom",
+  intent: "United-Kingdom",
   case : 2
 },{
   pattern:"\\b[Ee]conom[cy]\\b|\\b[mM]arket\\b|\\b[tT]rade\\b",
@@ -76,7 +76,7 @@ const  patternDict = [{
   case : 2
 },{
   pattern: "\\b[gG]lobal\\swarming\\b|\\b[cC]limat(\\s?[cC]hange)?",
-  intent: "climat change",
+  intent: "climat",
   case : 2
 },{
   pattern: "\\b[Ee]nvironment\\b",
