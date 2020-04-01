@@ -35,10 +35,11 @@ server.listen(PORT, ()=>console.log(`The bot server is running on port ${PORT}`)
 
 
 async function bot_answer(f, data){
+    
         matchPattern(data.content, async cb => {
             if(cb.intent == "true")
             {
-                await f.txt(data.sender, "I didn't get what you want, try again please");
+                await f.txt(data.sender, "I didn't get what you want 😔, try again please or ask for help");
             }
             else{
                
@@ -46,12 +47,30 @@ async function bot_answer(f, data){
                 if(cb.case == 2)
                 {
                     console.log("Here are the articles that match your request");
+                    const intention = data.content.split(' ');
                     var filter = cb.intent;
+                        intention.forEach((element,index) => {
+                            matchPattern(element, async cb2 => {
+                               //console.log("index : " + index);
+                                if(cb2.case == 2 && filter.includes(cb2.intent) == false)
+                                {
+                                    console.log(cb2.intent)
+                                    filter = filter + " " + cb2.intent;
+                                }
+                            });
+                        });
+                    console.log("filter : " + filter);
                     api.get_from_api(filter, f, data);
+                    //if()
                 }
-                else
+                if(cb.case == 1)
                 {
                     await f.txt(data.sender, cb.intent);
+                }
+                if(cb.case == 3)
+                {
+                    var help = "Here what I can do\n➡Greeting\n➡Bye\n➡Helping\n➡Asking for whatever news";
+                    await f.txt(data.sender,help)
                 }
             }
        });       
